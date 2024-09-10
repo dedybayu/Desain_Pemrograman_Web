@@ -1,28 +1,17 @@
 body {
   background-color: black;
-  position: relative;
-  margin: 0;
   padding: 0;
-  overflow: auto;
 }
 
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(img/gdungjti.png) no-repeat center center fixed;
-  background-size: cover;
-  filter: blur(8px);
-  opacity: 0.6;
-  z-index: -2;
-}
-
-.nama {
+.judul {
   text-align: center;
+  font-size: 50px;
   color: white;
+}
+
+h1, h2, h3{
+  font-family: sans-serif;
+  color: rgb(227, 232, 236);
 }
 
 .backLogo {
@@ -74,16 +63,34 @@ body::after {
 }
 
 .tabel {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+}
+
+.tabel td {
+  text-align: center;
+  vertical-align: top;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .tabel1 {
+  display: inline-block;
   text-align: center;
-  height: 200px;
-  width: 200px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 15px;
   background-color: rgba(107, 43, 226, 0.6);
   border-radius: 20px;
+}
+
+.logo-sosmed{
+  width: 120px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
 }
 
 .logo-sosmed{
@@ -98,6 +105,7 @@ body::after {
   color: rgb(188, 209, 228);
   font-size: 16pt;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -108,7 +116,176 @@ body::after {
   color: rgb(255, 255, 255);
 }
 
-.tabel1 img {
+.deskripsi{
+  width: 80%;
+  max-width: 100%;
+  border-radius: 50px;
+  background-color: rgba(107, 43, 226, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tabel-deskripsi{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  color: white;
+}
+
+.jti-deskripsi{
+  width: 86%;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.background-judul{
+  background-color: rgba(75, 75, 163, 0.6);
+} 
+
+li {
+  font-size: 20px;
+  color: white;
+}
+
+#portfolio1{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(86, 86, 185, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio2-vegas, #portfolio2-ae{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(114, 91, 216, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio3{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgba(130, 111, 219, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sertifikat1{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(86, 86, 185, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sertifikat2{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgb(114, 91, 216, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sertifikat3{
+  height: auto;
+  margin-right: 45px;
+  border-radius: 50px;
+  background-color: rgba(130, 111, 219, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profil-github{
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+
+}
+
+#editing-vegas, #editing-ae, #photoshop{
+  width: 65%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+}
+
+#mtcna{
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+}
+
+#lks-prov, #lks-bwi{
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 5px solid rgba(118, 201, 226, 0.8);
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT */
+.pendidikan {
+  width: 100%;
+}
+
+.pendidikan td {
+  text-align: center;
+  vertical-align: top;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.sekolah {
+  display: inline-block;
+  text-align: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: rgba(211, 198, 235, 0.6);
+  border-radius: 20px;
+}
+
+.logo-sekolah{
   width: 120px;
   padding-top: 20px;
   display: block;
@@ -117,21 +294,33 @@ body::after {
   opacity: 1;
 }
 
-.sosmed {
-  width: 120px;
-  padding-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.logo-sekolah{
+  transition: transform 0.2s ease;
 }
 
-.deskripsi{
-  width: 700;
-  height: 400;
-  border-radius: 50px;
-  background-color: rgba(107, 43, 226, 0.8);
-  margin-left: auto;
-  margin-right: auto;
+.logo-sekolah:hover{
+  transform: scale(0.9);
+}
+
+.link2 {
+  color: rgb(28, 41, 54);
+  font-size: 16pt;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.link2:hover {
+  color: rgb(171, 164, 201);
+}
+
+.link2:link {
+  color: rgb(93, 122, 216);
+}
+
+#deskripsi-singkat{
+  background-color: rgba(75, 75, 163, 0.6);
+  width: 99%;
+  border-radius: 30px;
   text-align: center;
 }
 
@@ -169,6 +358,10 @@ div.fixed{
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+#active{
+  background-color: #6678aa8a;
 }
 
 .tombol-footer:hover {
