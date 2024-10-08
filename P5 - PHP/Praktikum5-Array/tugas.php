@@ -3,20 +3,21 @@
 $daftarSiswa = [
     [
         'nama' => 'Alice',
-        'kursus' => ['Matematika', 'Fisika']
+        'kursus' => ['Matematika', 'Fisika'],
     ],
     [
         'nama' => 'Bob',
-        'kursus' => ['Kimia']
+        'kursus' => ['Kimia'],
     ],
     [
         'nama' => 'Charlie',
-        'kursus' => ['Matematika', 'Kimia', 'Biologi']
-    ]
+        'kursus' => ['Matematika', 'Kimia', 'Biologi'],
+    ],
 ];
 
 // Fungsi untuk menampilkan daftar siswa dan kursus
-function tampilkanDaftarSiswa($daftarSiswa) {
+function tampilkanDaftarSiswa($daftarSiswa)
+{
     foreach ($daftarSiswa as $siswa) {
         echo "<div class='siswa'>";
         echo "<h3>Nama: " . htmlspecialchars($siswa['nama']) . "</h3>";
@@ -32,64 +33,73 @@ if (isset($_POST['tambah_siswa'])) {
     $kursusBaru = explode(',', $kursusInput);
     $daftarSiswa[] = [
         'nama' => $namaSiswaBaru,
-        'kursus' => $kursusBaru
+        'kursus' => $kursusBaru,
     ];
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Kursus Online</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        .container {
-            max-width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #6678aa;
-        }
-        .siswa {
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #e9ecef;
-            border-left: 5px solid #007bff;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #6678aa;
+    }
+
+    .siswa {
+        margin-bottom: 15px;
+        padding: 10px;
+        background: #e9ecef;
+        border-left: 5px solid #007bff;
+    }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Pendaftaran Kursus Online</h1>
@@ -105,8 +115,9 @@ if (isset($_POST['tambah_siswa'])) {
 
         <h2>Daftar Siswa dan Kursus yang Diambil</h2>
         <?php
-        tampilkanDaftarSiswa($daftarSiswa);
-        ?>
+tampilkanDaftarSiswa($daftarSiswa);
+?>
     </div>
 </body>
+
 </html>
